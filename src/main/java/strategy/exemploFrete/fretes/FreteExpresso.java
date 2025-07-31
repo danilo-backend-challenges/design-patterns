@@ -1,6 +1,6 @@
-package strategy.frete;
+package strategy.exemploFrete.fretes;
 
-public class FreteComum implements Frete {
+public class FreteExpresso implements Frete {
     @Override
     public double calcular(double valor) {
         return valor * 0.05;

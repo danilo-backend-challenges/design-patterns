@@ -1,22 +1,17 @@
-package strategy;
+package strategy.exemploFrete;
 
-import strategy.frete.Frete;
+import strategy.exemploFrete.fretes.Frete;
 
 public abstract class Pedido {
     private double valor;
     private Frete tipoFrete;
 
-    public Pedido(double valor, Frete tipoFrete) {
+    public Pedido(double valor) {
         this.valor = valor;
-        this.tipoFrete = tipoFrete;
     }
 
-    public double calculaFrete() {
+    public double calcularFrete() {
         return tipoFrete.calcular(valor);
-    };
-
-    public Frete getTipoFrete() {
-        return tipoFrete;
     }
 
     public void setTipoFrete(Frete tipoFrete) {
